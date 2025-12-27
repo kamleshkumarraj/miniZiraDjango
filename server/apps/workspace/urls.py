@@ -1,5 +1,5 @@
 from django.urls import path
-from apps.workspaces.views import (
+from apps.workspaces.controllers.workspace_view import (
     WorkspaceListCreateAPI,
     WorkspaceDetailAPI,
 )
