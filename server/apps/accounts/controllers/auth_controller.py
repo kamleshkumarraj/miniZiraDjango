@@ -18,6 +18,7 @@ class RegisterAPI(APIView):
         serializer.is_valid(raise_exception=True)
 
         user = AuthService().register(serializer.validated_data)
+        
         return Response({"message": "User registered"})
 
 
